@@ -1,7 +1,18 @@
+aws41
+-----
+This is a fork of [mhart/aws4](https://github.com/mhart/aws4) to make it work with webpack and create-react-app. (See [mhart/aws4#55](https://github.com/mhart/aws4/issues/55)) To use this module, follow the original readme, but instead of using the name `aws4`, use `aws41`
+```
+npm install aws41
+```
+
+```javascript
+var aws4 = require('aws41');
+```
+
+Original readme follows.
+
 aws4
 ----
-
-[![Build Status](https://secure.travis-ci.org/mhart/aws4.png?branch=master)](http://travis-ci.org/mhart/aws4)
 
 A small utility to sign vanilla node.js http(s) request options using Amazon's
 [AWS Signature Version 4](http://docs.amazonwebservices.com/general/latest/gr/signature-version-4.html).
@@ -520,4 +531,3 @@ committed and subsequently extracted this code.
 Also thanks to the
 [official node.js AWS SDK](https://github.com/aws/aws-sdk-js) for giving
 me a start on implementing the v4 signature.
-
